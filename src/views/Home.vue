@@ -19,7 +19,7 @@
     <input
       ref="filElem"
       type="file"
-      accept="image/png,image/jpeg"
+      accept="image/*"
       style="display: none"
       @change="setCropImage"
     />
