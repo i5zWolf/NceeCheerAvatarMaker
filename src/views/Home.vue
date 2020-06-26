@@ -56,13 +56,16 @@ export default {
       dataList: [
         {
           id: 1,
+          author: "吴雨欣",
           preview_image_url:
-            "https://cdn.fly3949.com/wp-content/uploads/2020/03/avatar-longhair-150x150.jpg",
+            "https://i.loli.net/2020/06/26/kJuXsnt1GU94TA2.jpg",
+          template_image_url:
+            "https://i.loli.net/2020/06/26/6ZPb4x9fGcjyOFB.png",
           template_width: 1024,
           template_height: 1024,
           avatar_top: 200,
           avatar_left: 200,
-          avatar_width: 700,
+          avatar_width: 900,
           avatar_height: 700
         },
         {
@@ -92,6 +95,12 @@ export default {
     // 选中模板
     handleChooseTemplate(template) {
       console.log(template);
+      this.cropParams = JSON.parse(JSON.stringify(this.cropParams)); //改变对象引用
+      this.cropParams.visible = false;
+      this.cropParams.size = {
+        width: template.avatar_width,
+        height: template.avatar_height
+      };
       this.$refs.filElem.dispatchEvent(new MouseEvent("click"));
     },
     //组件更新
@@ -106,9 +115,9 @@ export default {
     },
     //设置裁剪图片
     setCropImage(evt) {
+      this.cropParams = JSON.parse(JSON.stringify(this.cropParams)); //改变对象引用
       var files = evt.target.files;
       if (files.length > 0) {
-        this.cropParams = JSON.parse(JSON.stringify(this.cropParams)); //改变对象引用
         this.cropParams.src = files[0];
         this.cropParams.visible = true;
       }
@@ -124,6 +133,7 @@ export default {
       $resultCanvas.style.marginRight = "10px";
       $resultCanvas.style.width = "50%";
       document.body.appendChild($resultCanvas);
+      console.log($resultCanvas.toDataURL());
     },
     //上传图片回调函数
     uploadCallback(src) {
@@ -151,7 +161,7 @@ export default {
   &-item {
     width: 191px;
     height: 191px;
-    background: rgba(199, 230, 255, 1);
+    background: rgb(235, 246, 255);
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -161,7 +171,7 @@ export default {
     &-image {
       width: 170px;
       height: 170px;
-      border-radius: 12px;
+      border-radius: 10px;
     }
   }
 
