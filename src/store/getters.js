@@ -1,4 +1,5 @@
 const getters = {
-  // userinfo: state => state.user.userinfo
+  template: state => state.avatar.template,
+  avatar: state => state.avatar.avatar
 };
 export default getters;

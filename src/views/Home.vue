@@ -110,13 +110,14 @@ export default {
       evt.target.value = "";
     },
     // 图片裁剪回调函数
-    cropCallback($resultCanvas) {
+    async cropCallback($resultCanvas) {
       console.log("cropCallback");
-      $resultCanvas.style.marginRight = "10px";
-      $resultCanvas.style.width = "50%";
-      document.body.appendChild($resultCanvas);
+      // $resultCanvas.style.marginRight = "10px";
+      // $resultCanvas.style.width = "50%";
+      // document.body.appendChild($resultCanvas);
       // console.log($resultCanvas.toDataURL());
-      this.$store.dispatch("setAvatar", $resultCanvas.toDataURL());
+      await this.$store.dispatch("setAvatar", $resultCanvas.toDataURL());
+      this.$router.push({ name: "Generate" });
     }
   }
 };
@@ -131,6 +132,7 @@ export default {
   color: #ffffff;
   text-align: center;
 }
+
 .template {
   padding: 0 68px;
   display: flex;

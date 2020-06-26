@@ -3,7 +3,9 @@
     <div class="logo">
       <div class="logo-img" />
     </div>
-    <router-view />
+    <keep-alive>
+      <router-view />
+    </keep-alive>
   </div>
 </template>
 

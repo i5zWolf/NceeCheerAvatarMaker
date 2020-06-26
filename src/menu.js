@@ -4,6 +4,12 @@ const menu = [
     name: "Home",
     component: () => import("@/views/Home"),
     meta: {}
+  },
+  {
+    path: "/generate",
+    name: "Generate",
+    component: () => import("@/views/Generate"),
+    meta: {}
   }
 ];
 
