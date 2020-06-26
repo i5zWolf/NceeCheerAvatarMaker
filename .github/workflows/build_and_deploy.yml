@@ -1,0 +1,63 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    # - name: Cache node modules...
+    #   uses: actions/cache@v1
+    #   env:
+    #     cache-name: cache-node-modules
+    #   with:
+    #     path: ./node_modules
+    #     key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+    #     restore-keys: |
+    #       ${{ runner.os }}-build-${{ env.cache-name }}-
+    #       ${{ runner.os }}-build-
+    #       ${{ runner.os }}-
+
+    - name: Cache npm...
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Install npm dependencies...
+      run: npm ci
+    - name: Lint...
+      run: npm run lint
+    - name: Build...
+      run: npm run build --if-present
+
+    - name: Deploy...
+      uses: easingthemes/ssh-deploy@v2.1.2
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SZ_SERVER_SSH_KEY }}
+        ARGS: "-rltgoDzvO --delete"
+        SOURCE: "dist/"
+        REMOTE_HOST: ${{ secrets.ALIYUN_SZ_REMOTE_HOST }}
+        REMOTE_PORT: ${{ secrets.ALIYUN_SZ_REMOTE_PORT }}
+        REMOTE_USER: ${{ secrets.ALIYUN_SZ_REMOTE_USER }}
+        TARGET: ${{ secrets.ALIYUN_SZ_REMOTE_TARGET }}
