@@ -23,12 +23,7 @@
       style="display: none"
       @change="setCropImage"
     />
-    <simple-crop
-      :crop-params="cropParams"
-      @crop="cropCallback"
-      @upload="uploadCallback"
-      @close="closeCallback"
-    />
+    <simple-crop :crop-params="cropParams" @crop="cropCallback" />
   </div>
 </template>
 
@@ -43,7 +38,7 @@ export default {
   data() {
     return {
       cropParams: {
-        src: "https://i.loli.net/2020/06/26/FiPBurDgGkIHc7l.png", // 裁剪图片地址
+        src: null, // 裁剪图片地址
         size: {
           //裁剪尺寸
           width: 800,
@@ -94,7 +89,8 @@ export default {
   methods: {
     // 选中模板
     handleChooseTemplate(template) {
-      console.log(template);
+      // console.log(template);
+      this.$store.dispatch("setTemplate", template);
       this.cropParams = JSON.parse(JSON.stringify(this.cropParams)); //改变对象引用
       this.cropParams.visible = false;
       this.cropParams.size = {
@@ -103,17 +99,7 @@ export default {
       };
       this.$refs.filElem.dispatchEvent(new MouseEvent("click"));
     },
-    //组件更新
-    updateComponent() {
-      this.cropParams = JSON.parse(JSON.stringify(this.cropParams)); //改变对象引用
-      this.cropParams.borderColor = "#0BFF00"; //更新值
-      this.cropParams.cropSizePercent = 0.8;
-      this.cropParams.size = {
-        width: 600,
-        height: 600
-      };
-    },
-    //设置裁剪图片
+    // 设置裁剪图片
     setCropImage(evt) {
       this.cropParams = JSON.parse(JSON.stringify(this.cropParams)); //改变对象引用
       var files = evt.target.files;
@@ -123,21 +109,14 @@ export default {
       }
       evt.target.value = "";
     },
-    //关闭回调
-    closeCallback() {
-      console.log("closeCallback");
-    },
-    //图片裁剪回调函数
+    // 图片裁剪回调函数
     cropCallback($resultCanvas) {
       console.log("cropCallback");
       $resultCanvas.style.marginRight = "10px";
       $resultCanvas.style.width = "50%";
       document.body.appendChild($resultCanvas);
-      console.log($resultCanvas.toDataURL());
-    },
-    //上传图片回调函数
-    uploadCallback(src) {
-      console.log("uploadCallback " + src);
+      // console.log($resultCanvas.toDataURL());
+      this.$store.dispatch("setAvatar", $resultCanvas.toDataURL());
     }
   }
 };
