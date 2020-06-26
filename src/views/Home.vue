@@ -58,8 +58,8 @@ export default {
             "https://i.loli.net/2020/06/26/6ZPb4x9fGcjyOFB.png",
           template_width: 1024,
           template_height: 1024,
-          avatar_top: 200,
-          avatar_left: 200,
+          avatar_top: 118,
+          avatar_left: 66,
           avatar_width: 900,
           avatar_height: 700
         },

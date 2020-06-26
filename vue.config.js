@@ -17,7 +17,7 @@ module.exports = {
   productionSourceMap: false,
   chainWebpack: config => {
     config.plugin("html").tap(args => {
-      args[0].minify.removeComments = false;
+      args[0].minify = { removeComments: false };
       args[0].title = require("./package.json").title;
       args[0].time = now;
       args[0].env = process.env.NODE_ENV;
