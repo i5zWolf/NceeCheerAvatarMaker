@@ -29,6 +29,7 @@
 
 <script>
 import SimpleCrop from "simple-crop/index.vue";
+import dataList from "@/data/data";
 
 export default {
   name: "Home",
@@ -48,42 +49,7 @@ export default {
         cropSizePercent: 0.9, //裁剪框显示比例
         visible: false // 默认隐藏
       },
-      dataList: [
-        {
-          id: 1,
-          author: "吴雨欣",
-          preview_image_url:
-            "https://i.loli.net/2020/06/26/kJuXsnt1GU94TA2.jpg",
-          template_image_url:
-            "https://i.loli.net/2020/06/26/6ZPb4x9fGcjyOFB.png",
-          template_width: 1024,
-          template_height: 1024,
-          avatar_top: 118,
-          avatar_left: 66,
-          avatar_width: 900,
-          avatar_height: 700
-        },
-        {
-          id: 2,
-          preview_image_url:
-            "https://cdn.fly3949.com/wp-content/uploads/2020/03/avatar-longhair-150x150.jpg"
-        },
-        {
-          id: 3,
-          preview_image_url:
-            "https://cdn.fly3949.com/wp-content/uploads/2020/03/avatar-longhair-150x150.jpg"
-        },
-        {
-          id: 4,
-          preview_image_url:
-            "https://cdn.fly3949.com/wp-content/uploads/2020/03/avatar-longhair-150x150.jpg"
-        },
-        {
-          id: 5,
-          preview_image_url:
-            "https://cdn.fly3949.com/wp-content/uploads/2020/03/avatar-longhair-150x150.jpg"
-        }
-      ]
+      dataList
     };
   },
   methods: {
