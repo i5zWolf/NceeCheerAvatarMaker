@@ -7,7 +7,7 @@ module.exports = {
       propList: ["*"],
       viewportUnit: "vw",
       fontViewportUnit: "vw",
-      selectorBlackList: [],
+      selectorBlackList: ["crop"],
       minPixelValue: 1,
       mediaQuery: false,
       replace: true,
