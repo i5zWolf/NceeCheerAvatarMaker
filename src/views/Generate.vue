@@ -49,9 +49,9 @@ export default {
     if (!this.template || !this.avatar) {
       this.$router.push({ path: "/" });
     }
-    this.$nextTick(() => {
-      this.$refs["avatar"].paint();
-    });
+    // this.$nextTick(() => {
+    this.$refs["avatar"].paint();
+    // });
   },
   methods: {
     handleBack() {
