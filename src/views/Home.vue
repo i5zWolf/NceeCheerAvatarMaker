@@ -8,7 +8,10 @@
         class="template-item"
         @click="handleChooseTemplate(item)"
       >
-        <img class="template-item-image" :src="item.preview_image_url" />
+        <img
+          class="template-item-image"
+          :src="`${item.preview_image_url}!nceeAvatarPreview20200702`"
+        />
       </div>
     </div>
     <div class="copyright">
