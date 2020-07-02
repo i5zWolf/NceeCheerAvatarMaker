@@ -39,7 +39,7 @@ body {
   }
 
   .copyright {
-    margin-top: 50px;
+    padding: 50px 0 30px 0;
     font-size: 24px;
     color: #ffffff;
     text-align: center;
