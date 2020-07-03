@@ -3,9 +3,9 @@ const templates = [
     id: 1,
     author: "xixi",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/001/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/001/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/001/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/001/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 70,
@@ -17,9 +17,9 @@ const templates = [
     id: 13,
     author: "xixi",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/013/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/013/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/013/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/013/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 138,
@@ -31,9 +31,9 @@ const templates = [
     id: 14,
     author: "xixi",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/014/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/014/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/014/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/014/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 185,
@@ -45,9 +45,9 @@ const templates = [
     id: 2,
     author: "庄泓睿",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/002/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/002/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/002/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/002/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 30,
@@ -59,9 +59,9 @@ const templates = [
     id: 3,
     author: "庄泓睿",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/003/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/003/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/003/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/003/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 0,
@@ -73,9 +73,9 @@ const templates = [
     id: 4,
     author: "庄泓睿",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/004/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/004/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/004/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/004/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 0,
@@ -87,9 +87,9 @@ const templates = [
     id: 5,
     author: "庄泓睿",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/005/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/005/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/005/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/005/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 60,
@@ -101,9 +101,9 @@ const templates = [
     id: 6,
     author: "庄泓睿",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/006/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/006/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/006/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/006/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 60,
@@ -115,9 +115,9 @@ const templates = [
     id: 7,
     author: "庄泓睿",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/007/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/007/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/007/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/007/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 0,
@@ -129,9 +129,9 @@ const templates = [
     id: 8,
     author: "庄泓睿",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/008/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/008/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/008/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/008/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 0,
@@ -143,9 +143,9 @@ const templates = [
     id: 9,
     author: "庄泓睿",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/009/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/009/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/009/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/009/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 0,
@@ -157,9 +157,9 @@ const templates = [
     id: 10,
     author: "庄泓睿",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/010/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/010/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/010/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/010/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 0,
@@ -171,9 +171,9 @@ const templates = [
     id: 12,
     author: "曾思恺",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/012/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/012/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/012/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/012/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 55,
@@ -185,9 +185,9 @@ const templates = [
     id: 11,
     author: "林宇鑫",
     preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/011/example.jpg",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/011/example.jpg!nceeAvatarPreview20200702?v=20200703",
     template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/011/template.png",
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/011/template.png?v=20200703",
     template_width: 1024,
     template_height: 1024,
     avatar_top: 0,
