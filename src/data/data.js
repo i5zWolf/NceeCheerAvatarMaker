@@ -36,7 +36,7 @@ const templates = [
       "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/014/template.png",
     template_width: 1024,
     template_height: 1024,
-    avatar_top: 175,
+    avatar_top: 185,
     avatar_left: 0,
     avatar_width: 1024,
     avatar_height: 650
