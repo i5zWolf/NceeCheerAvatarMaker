@@ -8,10 +8,10 @@ const templates = [
       "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/001/template.png",
     template_width: 1024,
     template_height: 1024,
-    avatar_top: 138,
+    avatar_top: 70,
     avatar_left: 66,
     avatar_width: 906,
-    avatar_height: 880
+    avatar_height: 948
   },
   {
     id: 13,
@@ -26,6 +26,20 @@ const templates = [
     avatar_left: 66,
     avatar_width: 906,
     avatar_height: 880
+  },
+  {
+    id: 14,
+    author: "xixi",
+    preview_image_url:
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/014/example.jpg",
+    template_image_url:
+      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/014/template.png",
+    template_width: 1024,
+    template_height: 1024,
+    avatar_top: 175,
+    avatar_left: 0,
+    avatar_width: 1024,
+    avatar_height: 650
   },
   {
     id: 2,
