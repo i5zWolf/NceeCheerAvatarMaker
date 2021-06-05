@@ -13,34 +13,34 @@ const templates = [
     avatar_width: 906,
     avatar_height: 948
   },
-  {
-    id: 13,
-    author: "xixi",
-    preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/013/example.jpg!nceeAvatarPreview20200702?v=20200703",
-    template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/013/template.png?v=20200703",
-    template_width: 1024,
-    template_height: 1024,
-    avatar_top: 138,
-    avatar_left: 66,
-    avatar_width: 906,
-    avatar_height: 880
-  },
-  {
-    id: 14,
-    author: "xixi",
-    preview_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/014/example.jpg!nceeAvatarPreview20200702?v=20200703",
-    template_image_url:
-      "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/014/template.png?v=20200703",
-    template_width: 1024,
-    template_height: 1024,
-    avatar_top: 185,
-    avatar_left: 0,
-    avatar_width: 1024,
-    avatar_height: 650
-  },
+  // {
+  //   id: 13,
+  //   author: "xixi",
+  //   preview_image_url:
+  //     "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/013/example.jpg!nceeAvatarPreview20200702?v=20200703",
+  //   template_image_url:
+  //     "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/013/template.png?v=20200703",
+  //   template_width: 1024,
+  //   template_height: 1024,
+  //   avatar_top: 138,
+  //   avatar_left: 66,
+  //   avatar_width: 906,
+  //   avatar_height: 880
+  // },
+  // {
+  //   id: 14,
+  //   author: "xixi",
+  //   preview_image_url:
+  //     "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/014/example.jpg!nceeAvatarPreview20200702?v=20200703",
+  //   template_image_url:
+  //     "https://storage-common-upyun.qz5z.ren/ncee-avatar-templates/014/template.png?v=20200703",
+  //   template_width: 1024,
+  //   template_height: 1024,
+  //   avatar_top: 185,
+  //   avatar_left: 0,
+  //   avatar_width: 1024,
+  //   avatar_height: 650
+  // },
   {
     id: 2,
     author: "庄泓睿",
